@@ -1,0 +1,49 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+IMPORTABLE EXTERNPROTO "../protos/MyTurtleBot3Burger.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/toys/protos/RubberDuck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/robotis/turtlebot/protos/TurtleBot3Burger.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.5035943218841712 0.23291352944694468 0.831951949794331 1.944221198026552
+  position 0.2461636179617916 -2.753007162786426 3.2976422479512046
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 2 2
+}
+DEF duck RubberDuck {
+  translation 0.488631 -0.219088 0.020438018204865356
+  rotation -0.8698043785930252 -0.47580028439549327 0.1305926198127942 1.0450774824513482e-16
+  name "duck"
+}
+DEF turtlebot TurtleBot3Burger {
+  hidden position_0_0 12.027260516722386
+  hidden position_0_1 14.4454355711312
+  hidden position_0_2 -58.91351821942309
+  hidden position2_0_2 -0.06454635195297563
+  hidden position3_0_2 -23.338465960767667
+  hidden linearVelocity_0 4.670200949795476e-16 5.341322462671837e-16 -2.375443991662646e-16
+  hidden angularVelocity_0 -2.2265080817096e-15 7.854758833872093e-15 -9.490536164125162e-16
+  hidden rotation_8 0 -1 0 2.109906097636787
+  hidden linearVelocity_8 4.898321821564597e-16 9.605014920359075e-16 9.973780672111026e-16
+  hidden angularVelocity_8 -4.389947659568033e-14 2.7630094478235634e-14 -2.311218669940191e-15
+  hidden rotation_9 -0.9881452393101576 1.8783802741358007e-06 0.15352193988203408 3.141589907201593
+  hidden linearVelocity_9 1.8924715312496143e-16 1.980738064441574e-17 1.2453645580243522e-16
+  hidden angularVelocity_9 -2.0692969972384327e-15 4.06226733164172e-15 -6.788828240339054e-16
+  hidden rotation_10 0.600387195867338 -0.7321055973662839 -0.3218021276242767 3.5704244244897185
+  hidden linearVelocity_10 1.6704370539061818e-16 5.041169743457659e-16 -1.0855506456752922e-13
+  hidden angularVelocity_10 -1.2602923936316115e-13 4.176092494823251e-14 1.2087673086058797e-29
+  translation 0.4235057725966686 -0.09161232562213535 -0.00024773920608353595
+  rotation -0.0023421188224299846 -0.01007375111913281 -0.9999465155786141 0.45268011269208974
+  controller "supervisor_controller"
+  supervisor TRUE
+}

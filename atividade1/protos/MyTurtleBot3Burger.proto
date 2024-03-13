@@ -1,0 +1,10 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/released/projects/robots/robotis/turtlebot/protos/TurtleBot3Burger.proto"
+
+PROTO MyTurtleBot3Burger [
+]
+{
+  TurtleBot3Burger {
+  }
+}

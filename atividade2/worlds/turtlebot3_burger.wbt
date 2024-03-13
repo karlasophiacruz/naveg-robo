@@ -1,0 +1,106 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/CircleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/containers/protos/WoodenBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/robotis/turtlebot/protos/TurtleBot3Burger.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/toys/protos/RubberDuck.proto"
+
+WorldInfo {
+  basicTimeStep 64
+}
+Viewpoint {
+  orientation -0.1828640711382819 0.9406253742218504 0.28598013367494135 1.1940683538923043
+  position -2.421245715159455 -1.006700378168084 6.197921846448395
+  follow "TurtleBot3Burger"
+  followType "Pan and Tilt Shot"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+  texture "noon_park_empty"
+}
+CircleArena {
+  radius 2
+  wallHeight 0.2
+}
+WoodenBox {
+  translation -0.46832 -1.67498 0.15
+  size 0.3 0.3 0.3
+}
+WoodenBox {
+  translation 0.218261 -1.59775 0.15
+  name "wooden box(1)"
+  size 0.3 0.3 0.3
+}
+WoodenBox {
+  translation 0.201071 -0.945205 0.15
+  name "wooden box(13)"
+  size 0.3 0.3 0.3
+}
+WoodenBox {
+  translation -0.21647 1.33191 0.15
+  name "wooden box(2)"
+  size 0.3 0.3 0.3
+}
+WoodenBox {
+  translation -0.781399 0.785064 0.15
+  name "wooden box(3)"
+  size 0.3 0.3 0.3
+}
+WoodenBox {
+  translation -0.504281 -0.759971 0.15
+  name "wooden box(4)"
+  size 0.3 0.3 0.3
+}
+WoodenBox {
+  translation 0.746957 -0.126457 0.15
+  name "wooden box(6)"
+  size 0.3 0.3 0.3
+}
+WoodenBox {
+  translation 0.0794854 0.148306 0.15
+  name "wooden box(8)"
+  size 0.3 0.3 0.3
+}
+WoodenBox {
+  translation -0.795441 0.391885 0.15
+  name "wooden box(7)"
+  size 0.3 0.3 0.3
+}
+WoodenBox {
+  translation -1.55565 -0.525689 0.15
+  name "wooden box(10)"
+  size 0.3 0.3 0.3
+}
+WoodenBox {
+  translation 1.36495 0.349625 0.15
+  name "wooden box(9)"
+  size 0.3 0.3 0.3
+}
+WoodenBox {
+  translation 0.654659 0.86282 0.15
+  name "wooden box(12)"
+  size 0.3 0.3 0.3
+}
+WoodenBox {
+  translation 1.42269 -0.611487 0.15
+  name "wooden box(11)"
+  size 0.3 0.3 0.3
+}
+WoodenBox {
+  translation -1.15598 -1.16759 0.15
+  name "wooden box(5)"
+  size 0.3 0.3 0.3
+}
+DEF turtlebot TurtleBot3Burger {
+  translation -1.29875 0.726439 -0.000481112
+  rotation -0.0050945772249416195 -0.014262996924543216 -0.9998852995227149 0.6797313172149352
+  controller "my_controller"
+  supervisor TRUE
+}
+DEF duck RubberDuck {
+  translation 0.852442 -1.54044 0.0203628
+  rotation 0.36163081857126017 -0.9174101575310698 -0.16607755392676662 2.149838909533085e-16
+}
